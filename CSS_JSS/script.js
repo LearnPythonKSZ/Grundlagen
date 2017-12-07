@@ -4,7 +4,7 @@ function Question(name){
 	if (bool=="true"){
 		document.getElementById("answer1").className="answer";
 		document.getElementById("answer2").className="answer";
-		document.getElementById("answer3").className="answer";
+		document.getElementById("answer3").className="answertrue";
 		document.getElementById("answer4").className="answer";
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
