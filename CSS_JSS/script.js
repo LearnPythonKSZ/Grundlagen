@@ -69,16 +69,16 @@ function Question2(name){
 	}else{
 		switch(name){
 			case "button5":
-				document.getElementById("answer1").className="answercrossed";
+				document.getElementById("answer5").className="answercrossed";
 				break;
 			case "button6":
-				document.getElementById("answer2").className="answercrossed";
+				document.getElementById("answer6").className="answercrossed";
 				break;
 			case "button7":
-				document.getElementById("answer3").className="answercrossed";
+				document.getElementById("answer7").className="answercrossed";
 				break;
 			case "button8":
-				document.getElementById("answer4").className="answercrossed";
+				document.getElementById("answer8").className="answercrossed";
 				break;
 		}
 	}
