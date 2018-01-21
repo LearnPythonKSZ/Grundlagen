@@ -197,6 +197,9 @@ div.heading {
 .answer{
 	text-decoration: none;
 }
+.answertrue{
+	color: green;
+}
 .answercrossed{
 	text-decoration: line-through;
 	color: red;
