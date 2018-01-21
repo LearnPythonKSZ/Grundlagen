@@ -32,8 +32,8 @@ function Question1(name){
 	if (bool=="true"){
 		document.getElementById("answer1").className="answer";
 		document.getElementById("answer2").className="answer";
-		document.getElementById("answer3").className="answer";
-		document.getElementById("answer4").className="answertrue";
+		document.getElementById("answer3").className="answertrue";
+		document.getElementById("answer4").className="answer";
 		number();
 		pointquestion1=1;
 		pointunlock();
