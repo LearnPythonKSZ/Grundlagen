@@ -2,7 +2,8 @@ var points=0;
 var pointgap = 0;
 var pointanswerfunction = 0;
 var pointsimagemap=0;
-var pointquestion=0;
+var pointquestion1=0;
+var pointquestion2=0;
 var pointsneeded=1;
 var differenz= pointsneeded-points;
 function number(){
@@ -16,7 +17,7 @@ function number(){
 	}
 }
 function pointunlock() {
-	points = pointgap + pointanswerfunction + pointquestion + pointsimagemap;
+	points = pointgap + pointanswerfunction + pointquestion1 + pointquestion2  + pointsimagemap;
 	differenz= pointsneeded-points;
 	number();
 	if (points >= pointsneeded){
@@ -25,7 +26,7 @@ function pointunlock() {
 		document.getElementById("buttonhref").href="/IDE"
 	}
 }
-function Question(name){
+function Question1(name){
 	var elements = document.getElementsByName(name);
 	var bool = elements[0].getAttribute( 'id' );
 	if (bool=="true"){
@@ -34,7 +35,7 @@ function Question(name){
 		document.getElementById("answer3").className="answer";
 		document.getElementById("answer4").className="answertrue";
 		number();
-		pointquestion=1;
+		pointquestion1=1;
 		pointunlock();
 	}else{
 		switch(name){
@@ -48,6 +49,35 @@ function Question(name){
 				document.getElementById("answer3").className="answercrossed";
 				break;
 			case "button4":
+				document.getElementById("answer4").className="answercrossed";
+				break;
+		}
+	}
+}
+
+function Question2(name){
+	var elements = document.getElementsByName(name);
+	var bool = elements[0].getAttribute( 'id' );
+	if (bool=="true"){
+		document.getElementById("answer5").className="answer";
+		document.getElementById("answer6").className="answertrue";
+		document.getElementById("answer7").className="answer";
+		document.getElementById("answer8").className="answer";
+		number();
+		pointquestion2=1;
+		pointunlock();
+	}else{
+		switch(name){
+			case "button5":
+				document.getElementById("answer1").className="answercrossed";
+				break;
+			case "button6":
+				document.getElementById("answer2").className="answercrossed";
+				break;
+			case "button7":
+				document.getElementById("answer3").className="answercrossed";
+				break;
+			case "button8":
 				document.getElementById("answer4").className="answercrossed";
 				break;
 		}
