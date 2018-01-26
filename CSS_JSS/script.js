@@ -8,6 +8,8 @@ var pointsneeded=1;
 var differenz= pointsneeded-points;
 function number(){
 	document.getElementById("point").innerHTML= points;
+	document.getElementById("pointquestion1").innerHTML= pointquestion1;
+	document.getElementById("pointquestion2").innerHTML= pointquestion2;
 	if(pointsneeded-points>0){
 		differenz= pointsneeded-points;
 		document.getElementById("diff").innerHTML=differenz;
@@ -70,6 +72,7 @@ function Question1(name){
 		document.getElementById("answer4").className="answer";
 		number();
 		pointquestion1=1;
+		document.getElementById("pointquestion1").innerHTML= pointquestion1;
 		pointunlock();
 	}else{
 		switch(name){
@@ -99,6 +102,7 @@ function Question2(name){
 		document.getElementById("answer8").className="answer";
 		number();
 		pointquestion2=1;
+		document.getElementById("pointquestion2").innerHTML= pointquestion2;
 		pointunlock();
 	}else{
 		switch(name){
