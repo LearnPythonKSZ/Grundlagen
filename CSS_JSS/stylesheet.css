@@ -234,8 +234,12 @@ div.heading {
 	font-style:oblique;
 	font-size: 120%
 }
-.answers{
-	margin-left: 37%;
+.answers1{
+	margin-left: calc(50%-210px);
+	font-size: 100%;
+}
+.answers2{
+	margin-left: calc(50%-600px);
 	font-size: 100%;
 }
 .answer{
